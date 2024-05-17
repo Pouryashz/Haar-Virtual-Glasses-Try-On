@@ -13,7 +13,7 @@ This Python script uses OpenCV to detect faces and eyes in an image, and overlay
 ## Usage
 
 1. Install the required libraries (OpenCV) if not already installed.
-2. Place the input image (`Male.jpg`) and the sunglasses image (`glasses.png`) in the same directory as the script.
+2. Place the input image (`Male.jpg` or `Female.jpg`) and the sunglasses image (`glasses.png`) in the same directory as the script.
 3. Ensure that the Haar cascade classifiers (`haarcascade_frontalface_default.xml` and `haarcascade_eye.xml`) are also in the same directory or update the file paths accordingly.
 4. Run the script.
 5. The script will display the input image with the overlaid sunglasses on the detected face.
@@ -22,7 +22,7 @@ This Python script uses OpenCV to detect faces and eyes in an image, and overlay
 ## How it Works
 
 1. The script loads the Haar cascade classifiers for face and eye detection.
-2. It reads the input image (`Male.jpg`) and the sunglasses image (`glasses.png`) with an alpha channel.
+2. It reads the input image (`Male.jpg` or `Female.jpg`) and the sunglasses image (`glasses.png`) with an alpha channel.
 3. The face detection algorithm is applied to the input image, and for each detected face:
   - The face region is extracted from the grayscale and color images.
   - Eye detection is performed within the face region.
@@ -36,4 +36,4 @@ This Python script uses OpenCV to detect faces and eyes in an image, and overlay
 
 ## Note
 
-The script assumes that the input image (`Male.jpg`) and the sunglasses image (`glasses.png`) are present in the same directory as the script. If the file paths or names are different, update them accordingly in the script.
+The script assumes that the input image (`Male.jpg` or `Female.jpg`) and the sunglasses image (`glasses.png`) are present in the same directory as the script. If the file paths or names are different, update them accordingly in the script.
