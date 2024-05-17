@@ -1,31 +1,39 @@
-Haar Virtual Glasses Try-On
+# Face and Eye Detection using Haar Cascade Classifiers
 
-Overview:
-Haar Virtual Glasses Try-On is a Python project that allows users to try on virtual glasses on their faces in photos. The project utilizes Haar cascades for face and eye detection to accurately place virtual glasses on detected faces.
+This Python script uses OpenCV's Haar cascade classifiers to detect faces and eyes in an image.
 
-This version of the project focuses on implementing the virtual glasses try-on functionality for photos. Future versions will extend this functionality to videos, enabling real-time virtual glasses overlay.
+## Prerequisites
 
-Features:
-- Detects faces and eyes in photos using Haar cascades.
-- Places virtual glasses on detected faces, adjusting size and position based on eye locations.
-- Support for transparent glasses images with an alpha channel.
+- Python 3.x
+- OpenCV (`cv2`) library installed (`pip install opencv-python`)
 
-Installation:
+## Installation
+
 1. Clone the repository:
-   git clone https://github.com/your_username/Haar-virtual-glasses-tryon.git
-2. Install the required dependencies:
-   pip install opencv-python
 
-Usage:
-1. Ensure you have Python installed on your system.
-2. Navigate to the project directory.
-3. Place your input image (with a face) in the same directory.
-4. Run the script:
-   python virtual_glasses_tryon.py
-5. The output image with virtual glasses overlaid on the face will be displayed.
+    ```
+    git clone https://github.com/yourusername/face-eye-detection.git
+    ```
 
-Contributing:
-Contributions are welcome! Feel free to open issues or pull requests for any improvements or additional features you'd like to see in the project.
+2. Navigate to the project directory:
 
-License:
-This project is licensed under the MIT License.
+    ```
+    cd face-eye-detection
+    ```
+
+3. Place your input image (`Male.jpg` or `Female.jpg`) in the project directory.
+
+4. Ensure that the Haar cascade classifier files (`haarcascade_frontalface_default.xml` and `haarcascade_eye.xml`) are present in the project directory.
+
+## Usage
+
+Run the Python script:
+
+
+The script will display the input image with rectangles drawn around detected faces and eyes.
+
+## Notes
+
+- The script assumes that the input image is named `Male.jpg`. Please replace it with your desired input image.
+- Ensure that the Haar cascade classifier files are up-to-date and located in the project directory.
+- Adjust parameters (`minNeighbors`, `scaleFactor`, etc.) in the code for optimal detection performance depending on your input images.
